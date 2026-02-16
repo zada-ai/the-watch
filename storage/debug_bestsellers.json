@@ -1,0 +1,466 @@
+[
+    {
+        "id": 1,
+        "name": "Best Seller Watches 1",
+        "descri": "Premium watches 1",
+        "orig_price": "6836.00",
+        "sale_price": "5462.00",
+        "discount": 47,
+        "category": "watches",
+        "colors": {
+            "red": "#ff0000",
+            "blue": "#0000ff"
+        },
+        "images": {
+            "red": [
+                "img\/red1.png",
+                "img\/red2.png",
+                "img\/red3.png"
+            ],
+            "blue": [
+                "img\/blue1.png",
+                "img\/blue2.png"
+            ]
+        },
+        "active": true,
+        "created_at": "2026-02-04T06:49:00.000000Z",
+        "updated_at": "2026-02-04T06:49:00.000000Z"
+    },
+    {
+        "id": 2,
+        "name": "Best Seller Headphones 1",
+        "descri": "Premium headphones 1",
+        "orig_price": "8419.00",
+        "sale_price": "6842.00",
+        "discount": 34,
+        "category": "headphones",
+        "colors": {
+            "red": "#ff0000",
+            "blue": "#0000ff"
+        },
+        "images": {
+            "red": [
+                "img\/red1.png",
+                "img\/red2.png",
+                "img\/red3.png"
+            ],
+            "blue": [
+                "img\/blue1.png",
+                "img\/blue2.png"
+            ]
+        },
+        "active": true,
+        "created_at": "2026-02-04T06:49:00.000000Z",
+        "updated_at": "2026-02-04T06:49:00.000000Z"
+    },
+    {
+        "id": 3,
+        "name": "Best Seller Airbuds 1",
+        "descri": "Premium airbuds 1",
+        "orig_price": "14365.00",
+        "sale_price": "12906.00",
+        "discount": 20,
+        "category": "airbuds",
+        "colors": {
+            "red": "#ff0000",
+            "blue": "#0000ff"
+        },
+        "images": {
+            "red": [
+                "img\/red1.png",
+                "img\/red2.png",
+                "img\/red3.png"
+            ],
+            "blue": [
+                "img\/blue1.png",
+                "img\/blue2.png"
+            ]
+        },
+        "active": true,
+        "created_at": "2026-02-04T06:49:00.000000Z",
+        "updated_at": "2026-02-04T06:49:00.000000Z"
+    },
+    {
+        "id": 4,
+        "name": "Best Seller Watches 2",
+        "descri": "Premium watches 2",
+        "orig_price": "13896.00",
+        "sale_price": "11678.00",
+        "discount": 37,
+        "category": "watches",
+        "colors": {
+            "red": "#ff0000",
+            "blue": "#0000ff"
+        },
+        "images": {
+            "red": [
+                "img\/red1.png",
+                "img\/red2.png",
+                "img\/red3.png"
+            ],
+            "blue": [
+                "img\/blue1.png",
+                "img\/blue2.png"
+            ]
+        },
+        "active": true,
+        "created_at": "2026-02-04T06:49:00.000000Z",
+        "updated_at": "2026-02-04T06:49:00.000000Z"
+    },
+    {
+        "id": 5,
+        "name": "Best Seller Headphones 2",
+        "descri": "Premium headphones 2",
+        "orig_price": "11173.00",
+        "sale_price": "10860.00",
+        "discount": 26,
+        "category": "headphones",
+        "colors": {
+            "red": "#ff0000",
+            "blue": "#0000ff"
+        },
+        "images": {
+            "red": [
+                "img\/red1.png",
+                "img\/red2.png",
+                "img\/red3.png"
+            ],
+            "blue": [
+                "img\/blue1.png",
+                "img\/blue2.png"
+            ]
+        },
+        "active": true,
+        "created_at": "2026-02-04T06:49:00.000000Z",
+        "updated_at": "2026-02-04T06:49:00.000000Z"
+    },
+    {
+        "id": 6,
+        "name": "Best Seller Airbuds 2",
+        "descri": "Premium airbuds 2",
+        "orig_price": "8669.00",
+        "sale_price": "4544.00",
+        "discount": 50,
+        "category": "airbuds",
+        "colors": {
+            "red": "#ff0000",
+            "blue": "#0000ff"
+        },
+        "images": {
+            "red": [
+                "img\/red1.png",
+                "img\/red2.png",
+                "img\/red3.png"
+            ],
+            "blue": [
+                "img\/blue1.png",
+                "img\/blue2.png"
+            ]
+        },
+        "active": true,
+        "created_at": "2026-02-04T06:49:01.000000Z",
+        "updated_at": "2026-02-04T06:49:01.000000Z"
+    },
+    {
+        "id": 7,
+        "name": "Best Seller Watches 3",
+        "descri": "Premium watches 3",
+        "orig_price": "8073.00",
+        "sale_price": "10365.00",
+        "discount": 36,
+        "category": "watches",
+        "colors": {
+            "red": "#ff0000",
+            "blue": "#0000ff"
+        },
+        "images": {
+            "red": [
+                "img\/red1.png",
+                "img\/red2.png",
+                "img\/red3.png"
+            ],
+            "blue": [
+                "img\/blue1.png",
+                "img\/blue2.png"
+            ]
+        },
+        "active": true,
+        "created_at": "2026-02-04T06:49:01.000000Z",
+        "updated_at": "2026-02-04T06:49:01.000000Z"
+    },
+    {
+        "id": 8,
+        "name": "Best Seller Headphones 3",
+        "descri": "Premium headphones 3",
+        "orig_price": "15840.00",
+        "sale_price": "14557.00",
+        "discount": 25,
+        "category": "headphones",
+        "colors": {
+            "red": "#ff0000",
+            "blue": "#0000ff"
+        },
+        "images": {
+            "red": [
+                "img\/red1.png",
+                "img\/red2.png",
+                "img\/red3.png"
+            ],
+            "blue": [
+                "img\/blue1.png",
+                "img\/blue2.png"
+            ]
+        },
+        "active": true,
+        "created_at": "2026-02-04T06:49:01.000000Z",
+        "updated_at": "2026-02-04T06:49:01.000000Z"
+    },
+    {
+        "id": 9,
+        "name": "Best Seller Airbuds 3",
+        "descri": "Premium airbuds 3",
+        "orig_price": "11681.00",
+        "sale_price": "8484.00",
+        "discount": 30,
+        "category": "airbuds",
+        "colors": {
+            "red": "#ff0000",
+            "blue": "#0000ff"
+        },
+        "images": {
+            "red": [
+                "img\/red1.png",
+                "img\/red2.png",
+                "img\/red3.png"
+            ],
+            "blue": [
+                "img\/blue1.png",
+                "img\/blue2.png"
+            ]
+        },
+        "active": true,
+        "created_at": "2026-02-04T06:49:01.000000Z",
+        "updated_at": "2026-02-04T06:49:01.000000Z"
+    },
+    {
+        "id": 10,
+        "name": "Best Seller Watches 4",
+        "descri": "Premium watches 4",
+        "orig_price": "16197.00",
+        "sale_price": "5185.00",
+        "discount": 45,
+        "category": "watches",
+        "colors": {
+            "red": "#ff0000",
+            "blue": "#0000ff"
+        },
+        "images": {
+            "red": [
+                "img\/red1.png",
+                "img\/red2.png",
+                "img\/red3.png"
+            ],
+            "blue": [
+                "img\/blue1.png",
+                "img\/blue2.png"
+            ]
+        },
+        "active": true,
+        "created_at": "2026-02-04T06:49:01.000000Z",
+        "updated_at": "2026-02-04T06:49:01.000000Z"
+    },
+    {
+        "id": 11,
+        "name": "Best Seller Headphones 4",
+        "descri": "Premium headphones 4",
+        "orig_price": "12092.00",
+        "sale_price": "10374.00",
+        "discount": 31,
+        "category": "headphones",
+        "colors": {
+            "red": "#ff0000",
+            "blue": "#0000ff"
+        },
+        "images": {
+            "red": [
+                "img\/red1.png",
+                "img\/red2.png",
+                "img\/red3.png"
+            ],
+            "blue": [
+                "img\/blue1.png",
+                "img\/blue2.png"
+            ]
+        },
+        "active": true,
+        "created_at": "2026-02-04T06:49:01.000000Z",
+        "updated_at": "2026-02-04T06:49:01.000000Z"
+    },
+    {
+        "id": 12,
+        "name": "Best Seller Airbuds 4",
+        "descri": "Premium airbuds 4",
+        "orig_price": "8591.00",
+        "sale_price": "6521.00",
+        "discount": 33,
+        "category": "airbuds",
+        "colors": {
+            "red": "#ff0000",
+            "blue": "#0000ff"
+        },
+        "images": {
+            "red": [
+                "img\/red1.png",
+                "img\/red2.png",
+                "img\/red3.png"
+            ],
+            "blue": [
+                "img\/blue1.png",
+                "img\/blue2.png"
+            ]
+        },
+        "active": true,
+        "created_at": "2026-02-04T06:49:01.000000Z",
+        "updated_at": "2026-02-04T06:49:01.000000Z"
+    },
+    {
+        "id": 13,
+        "name": "sohaib",
+        "descri": "xdfgfdh",
+        "orig_price": "0.04",
+        "sale_price": "0.06",
+        "discount": 3,
+        "category": "watches",
+        "colors": {
+            "red": "#ff0000",
+            "red'": "#0000ff"
+        },
+        "images": [],
+        "active": true,
+        "created_at": "2026-02-04T08:42:14.000000Z",
+        "updated_at": "2026-02-04T08:42:14.000000Z"
+    },
+    {
+        "id": 14,
+        "name": "sohaib",
+        "descri": "xdfgfdh",
+        "orig_price": "0.04",
+        "sale_price": "0.06",
+        "discount": 3,
+        "category": "watches",
+        "colors": {
+            "red": "#ff0000",
+            "red'": "#0000ff"
+        },
+        "images": [],
+        "active": true,
+        "created_at": "2026-02-04T08:42:16.000000Z",
+        "updated_at": "2026-02-04T08:42:16.000000Z"
+    },
+    {
+        "id": 15,
+        "name": "sohaib",
+        "descri": "xdfgfdh",
+        "orig_price": "0.04",
+        "sale_price": "0.06",
+        "discount": 3,
+        "category": "watches",
+        "colors": {
+            "red": "#ff0000",
+            "red'": "#0000ff"
+        },
+        "images": [],
+        "active": true,
+        "created_at": "2026-02-04T08:42:18.000000Z",
+        "updated_at": "2026-02-04T08:42:18.000000Z"
+    },
+    {
+        "id": 16,
+        "name": "sohaib",
+        "descri": "xdfgfdh",
+        "orig_price": "0.04",
+        "sale_price": "0.06",
+        "discount": 3,
+        "category": "watches",
+        "colors": {
+            "red": "#ff0000",
+            "red'": "#0000ff"
+        },
+        "images": [],
+        "active": true,
+        "created_at": "2026-02-04T08:42:21.000000Z",
+        "updated_at": "2026-02-04T08:42:21.000000Z"
+    },
+    {
+        "id": 17,
+        "name": "sohaib",
+        "descri": "nf,sdmnsadngkfdjng\r\n\r\ngadakfgbajsd\r\nngadfk'lhb'afdl\r\nfhnafdkhnldfha\r\nsh\r\njaf\r\ndhn\r\nafdknhkfdnh\r\nafdhk\r\nadfhn\r\nkdfahn\r\nadfkhnadflkhnlakfd\r\nhk\r\ndfahkfa\r\nnh\r\nkladfnh\r\nklafdn\r\nb\r\n vbvc bmadf hnafd\r\nlh\r\nfdh\r\nndflhnlkadnh\r\naklnfhdfn",
+        "orig_price": "1000.00",
+        "sale_price": "2000.00",
+        "discount": 50,
+        "category": "watches",
+        "colors": {
+            "grey": "#11ff00",
+            "red": "#0000ff",
+            "purple": "#0000ff"
+        },
+        "images": [
+            "http:\/\/127.0.0.1:8000\/storage\/best-seller-assets\/A0rbMH5Lhu0hql0EG1oAq37DfCN5j19yLoiOIfXh.png",
+            "http:\/\/127.0.0.1:8000\/storage\/best-seller-assets\/imY8y5y9JH2eKQrDIkWPXrLuC4YxTwUZrAxtM8PF.png",
+            "http:\/\/127.0.0.1:8000\/storage\/best-seller-assets\/8trZis4V1tIgelrdmv4CuG82XFrKuJngE0c0QDT2.png"
+        ],
+        "active": true,
+        "created_at": "2026-02-04T16:14:32.000000Z",
+        "updated_at": "2026-02-04T16:14:32.000000Z"
+    },
+    {
+        "id": 18,
+        "name": "sohaib",
+        "descri": "kfljhsodif",
+        "orig_price": "500.00",
+        "sale_price": "1000.00",
+        "discount": 50,
+        "category": "watches",
+        "colors": {
+            "red": "#ff0000",
+            "blue": "#0000ff"
+        },
+        "images": {
+            "red": [
+                "http:\/\/127.0.0.1:8000\/storage\/best-seller-assets\/QRlkAQK6Jb693BJ8KQZtBptSOqflcUYkcal360T6.png",
+                "http:\/\/127.0.0.1:8000\/storage\/best-seller-assets\/zBaf65DcYcdPGOab1P4PMatDKbuQIdUFHZzxxKA8.png",
+                "http:\/\/127.0.0.1:8000\/storage\/best-seller-assets\/gRgPhjLFEzA9raprTPCYBSnw9Sgja7g0WPIMsRO2.png",
+                "http:\/\/127.0.0.1:8000\/storage\/best-seller-assets\/5pwXT0Trx32IyMG9WRhnhzgoG7xGhf9prOKpNbZF.png",
+                "http:\/\/127.0.0.1:8000\/storage\/best-seller-assets\/x92VUxa1wW4FRI5sLDwebIN6kgRYN22AP0SqdV3o.png"
+            ],
+            "blue": [
+                "http:\/\/127.0.0.1:8000\/storage\/best-seller-assets\/vYwuOMQ5sSa7J2uu9VEVzpLEUHHWjcqYkoWlcku8.png",
+                "http:\/\/127.0.0.1:8000\/storage\/best-seller-assets\/pk7rV9wvQaelVQxLg53tZ7V67yP8W8zwVTztxqwP.png"
+            ]
+        },
+        "active": true,
+        "created_at": "2026-02-04T17:14:02.000000Z",
+        "updated_at": "2026-02-04T17:14:02.000000Z"
+    },
+    {
+        "id": 19,
+        "name": "vcxcb",
+        "descri": "dbvcbcxbxczbx x cbcxbxcb",
+        "orig_price": "1000.00",
+        "sale_price": "2000.00",
+        "discount": 59,
+        "category": "watches",
+        "colors": {
+            "red": "#ff0000"
+        },
+        "images": {
+            "red": [
+                "http:\/\/127.0.0.1:8000\/storage\/best-seller-assets\/QtKHbgInDENOHb214MQwJf2MP70PAIO5qlTaYDda.png",
+                "http:\/\/127.0.0.1:8000\/storage\/best-seller-assets\/w8HPTszs5fL3BBms7J9DpZoFItLgkZtcBigkm5m8.png"
+            ]
+        },
+        "active": true,
+        "created_at": "2026-02-04T18:45:40.000000Z",
+        "updated_at": "2026-02-04T18:45:40.000000Z"
+    }
+]
