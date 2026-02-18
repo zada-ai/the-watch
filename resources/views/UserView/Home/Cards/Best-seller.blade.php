@@ -24,14 +24,15 @@
         <div class="text-center mb-12">
             <h2 class="text-3xl md:text-5xl font-black text-white mb-3">
                 ⭐ Best Seller
-            </h2>
+            </h2>a
             <p class="text-amber-400 font-semibold text-lg">Customer Favorites</p>
         </div>
 
         <!-- Tab Buttons -->
-      <div class="flex gap-3 mb-12 flex-wrap justify-end">
+      <div class="flex gap-3 mb-12 flex-wrap justify-center md:justify-end">
     <button 
         class="bestseller-tab-btn active 
+               w-full sm:w-auto
                px-6 py-2 rounded-full text-sm font-semibold
                
                bg-transparent
@@ -45,6 +46,7 @@
 
     <button 
         class="bestseller-tab-btn 
+               w-full sm:w-auto
                px-6 py-2 rounded-full text-sm font-semibold
                
                bg-transparent
@@ -58,6 +60,7 @@
 
     <button 
         class="bestseller-tab-btn 
+               w-full sm:w-auto
                px-6 py-2 rounded-full text-sm font-semibold
                
                bg-transparent
@@ -74,19 +77,19 @@
         <!-- Watches Tab -->
         <div id="bestseller-watches-content" class="bestseller-tab-content">
             <div class="
-    flex gap-4 overflow-x-auto pb-4
-    snap-x snap-mandatory
-    sm:grid sm:grid-cols-2 lg:grid-cols-3
-    sm:overflow-visible
+    grid grid-cols-2 md:grid-cols-3 sm:grid-cols-2 gap-4 pb-4
 ">
 
                 @forelse($watches as $item)
-                <div class="
-    min-w-[85%] sm:min-w-0
+     <div class="
+    w-full
     snap-center
     bg-gradient-to-br from-gray-900 to-gray-800
-    rounded-xl p-4 shadow-lg
+    rounded-lg sm:rounded-xl
+    p-2 sm:p-3 md:p-4
+    shadow-md
 ">
+
 
                     <div class="relative">
                     @php
@@ -136,15 +139,24 @@
                         data-images='@json($item->images ?? [])'
                         data-index="0"
                         data-product="{{ $item->id }}"
-                        class="w-full h-56 object-cover rounded-lg mb-4 cursor-pointer"
-                    />
+                       
+    class="
+        w-full
+        h-36 sm:h-44 md:h-56
+        object-cover
+        rounded-md sm:rounded-lg
+        mb-2 sm:mb-3
+    "
+/>
+
                     <div class="absolute top-3 right-3 bg-white/10 text-white px-3 py-1 rounded">-{{ $item->discount }}%</div>
                     </div>
-                    <h3 class="text-white font-bold text-lg mb-1">{{ $item->name }}</h3>
-                    <p class="text-gray-400 mb-3">des: {{ $item->descri }}</p>
+                    <h3 class="text-white font-bold text-sm sm:text-base md:text-lg mb-1">{{ $item->name }}</h3>
+                  <p class="text-gray-400 text-xs sm:text-sm mb-2">des: {{ $item->descri }}</p>
                     <div class="flex items-center justify-between">
                         <div>
-                            <div class="text-2xl font-extrabold text-amber-400">Rs {{ number_format($item->sale_price) }}</div>
+                            <div class="text-lg sm:text-xl md:text-2xl font-extrabold text-amber-400">
+Rs {{ number_format($item->sale_price) }}</div>
                             <div class="text-xs text-gray-400 line-through">Rs {{ number_format($item->orig_price) }}</div>
                           @if(!empty($item->colors))
 <div class="flex gap-2 mt-2">
@@ -174,8 +186,8 @@
                         
                     </div>
                     <div class="mt-4 flex gap-2">
-                        <a href="{{ route('buy', ['type' => 'bestseller', 'id' => $item->id]) }}" class="flex-1 inline-block text-center bg-amber-500 hover:bg-amber-600 text-white py-2 rounded-lg">Buy Now</a>
-                        <a href="{{ route('watches') }}" class="flex-1 inline-block text-center border border-white/10 text-white py-2 rounded-lg">View More</a>
+                        <a href="{{ route('buy', ['type' => 'bestseller', 'id' => $item->id]) }}" class="flex-1 text-center text-xs sm:text-sm bg-amber-500 hover:bg-amber-600 text-white py-1.5 sm:py-2 rounded-md">Buy Now</a>
+                        <a href="{{ route('watches') }}" class="flex-1 text-center text-xs sm:text-sm border border-white/10 text-white py-1.5 sm:py-2 rounded-md">View More</a>
                     </div>
                 </div>
                 @empty
@@ -187,19 +199,19 @@
         <!-- Headphones Tab -->
         <div id="bestseller-headphones-content" class="bestseller-tab-content hidden">
             <div class="
-    flex gap-4 overflow-x-auto pb-4
-    snap-x snap-mandatory
-    sm:grid sm:grid-cols-2 lg:grid-cols-3
-    sm:overflow-visible
+    grid grid-cols-1 sm:grid-cols-2 gap-4 pb-4
 ">
 
                 @forelse($headphones as $item)
-                <div class="
-    min-w-[85%] sm:min-w-0
+     <div class="
+    w-full
     snap-center
     bg-gradient-to-br from-gray-900 to-gray-800
-    rounded-xl p-4 shadow-lg
+    rounded-lg sm:rounded-xl
+    p-2 sm:p-3 md:p-4
+    shadow-md
 ">
+
 
                     <div class="relative">
                     @php
@@ -249,15 +261,24 @@
                         data-images='@json($item->images ?? [])'
                         data-index="0"
                         data-product="{{ $item->id }}"
-                        class="w-full h-56 object-cover rounded-lg mb-4 cursor-pointer"
-                    />
+                       
+    class="
+        w-full
+        h-36 sm:h-44 md:h-56
+        object-cover
+        rounded-md sm:rounded-lg
+        mb-2 sm:mb-3
+    "
+/>
+
                     <div class="absolute top-3 right-3 bg-white/10 text-white px-3 py-1 rounded">-{{ $item->discount }}%</div>
                     </div>
-                    <h3 class="text-white font-bold text-lg mb-1">{{ $item->name }}</h3>
-                    <p class="text-gray-400 mb-3">des: {{ $item->descri }}</p>
+                    <h3 class="text-white font-bold text-sm sm:text-base md:text-lg mb-1">{{ $item->name }}</h3>
+                  <p class="text-gray-400 text-xs sm:text-sm mb-2">des: {{ $item->descri }}</p>
                     <div class="flex items-center justify-between">
                         <div>
-                            <div class="text-2xl font-extrabold text-blue-400">Rs {{ number_format($item->sale_price) }}</div>
+                            <div class="text-lg sm:text-xl md:text-2xl font-extrabold text-amber-400">
+Rs {{ number_format($item->sale_price) }}</div>
                             <div class="text-xs text-gray-400 line-through">Rs {{ number_format($item->orig_price) }}</div>
                           @if(!empty($item->colors))
                             <div class="flex gap-2 mt-2">
@@ -283,8 +304,8 @@
                         </div>
                     </div>
                     <div class="mt-4 flex gap-2">
-                        <a href="{{ route('buy', ['type' => 'bestseller', 'id' => $item->id]) }}" class="flex-1 inline-block text-center bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg">Buy Now</a>
-                        <a href="{{ route('headphones') }}" class="flex-1 inline-block text-center border border-white/10 text-white py-2 rounded-lg">View More</a>
+                        <a href="{{ route('buy', ['type' => 'bestseller', 'id' => $item->id]) }}" class="flex-1 text-center text-xs sm:text-sm bg-amber-500 hover:bg-amber-600 text-white py-1.5 sm:py-2 rounded-md">Buy Now</a>
+                        <a href="{{ route('headphones') }}" class="flex-1 text-center text-xs sm:text-sm border border-white/10 text-white py-1.5 sm:py-2 rounded-md">View More</a>
                     </div>
                 </div>
                 @empty
@@ -296,19 +317,19 @@
         <!-- Airbuds Tab -->
         <div id="bestseller-airbuds-content" class="bestseller-tab-content hidden">
             <div class="
-    flex gap-4 overflow-x-auto pb-4
-    snap-x snap-mandatory
-    sm:grid sm:grid-cols-2 lg:grid-cols-3
-    sm:overflow-visible
+    grid grid-cols-1 sm:grid-cols-2 gap-4 pb-4
 ">
 
                 @forelse($airbuds as $item)
-                <div class="
-    min-w-[85%] sm:min-w-0
+     <div class="
+    w-full
     snap-center
     bg-gradient-to-br from-gray-900 to-gray-800
-    rounded-xl p-4 shadow-lg
+    rounded-lg sm:rounded-xl
+    p-2 sm:p-3 md:p-4
+    shadow-md
 ">
+
 
                     <div class="relative">
                     @php
@@ -358,15 +379,24 @@
                         data-images='@json($item->images ?? [])'
                         data-index="0"
                         data-product="{{ $item->id }}"
-                        class="w-full h-56 object-cover rounded-lg mb-4 cursor-pointer"
-                    />
+                      
+    class="
+        w-full
+        h-36 sm:h-44 md:h-56
+        object-cover
+        rounded-md sm:rounded-lg
+        mb-2 sm:mb-3
+    "
+/>
+
                     <div class="absolute top-3 right-3 bg-white/10 text-white px-3 py-1 rounded">-{{ $item->discount }}%</div>
                     </div>
-                    <h3 class="text-white font-bold text-lg mb-1">{{ $item->name }}</h3>
-                    <p class="text-gray-400 mb-3">des: {{ $item->descri }}</p>
+                    <h3 class="text-white font-bold text-sm sm:text-base md:text-lg mb-1">{{ $item->name }}</h3>
+                  <p class="text-gray-400 text-xs sm:text-sm mb-2">des: {{ $item->descri }}</p>
                     <div class="flex items-center justify-between">
                         <div>
-                            <div class="text-2xl font-extrabold text-purple-400">Rs {{ number_format($item->sale_price) }}</div>
+                            <div class="text-lg sm:text-xl md:text-2xl font-extrabold text-amber-400">
+Rs {{ number_format($item->sale_price) }}</div>
                             <div class="text-xs text-gray-400 line-through">Rs {{ number_format($item->orig_price) }}</div>
                           @if(!empty($item->colors))
                             <div class="flex gap-2 mt-2">
@@ -392,8 +422,8 @@
                         </div>
                     </div>
                     <div class="mt-4 flex gap-2">
-                        <a href="{{ route('buy', ['type' => 'bestseller', 'id' => $item->id]) }}" class="flex-1 inline-block text-center bg-purple-500 hover:bg-purple-600 text-white py-2 rounded-lg">Buy Now</a>
-                        <a href="{{ route('airbuds') }}" class="flex-1 inline-block text-center border border-white/10 text-white py-2 rounded-lg">View More</a>
+                        <a href="{{ route('buy', ['type' => 'bestseller', 'id' => $item->id]) }}" class="flex-1 text-center text-xs sm:text-sm bg-amber-500 hover:bg-amber-600 text-white py-1.5 sm:py-2 rounded-md">Buy Now</a>
+                        <a href="{{ route('airbuds') }}" class="flex-1 text-center text-xs sm:text-sm border border-white/10 text-white py-1.5 sm:py-2 rounded-md">View More</a>
                     </div>
                 </div>
                 @empty
@@ -405,9 +435,12 @@
 </section>
 
 
-<div class='py-10 px-10'>
-    <img src="{{ asset('best-seller-assets/Warrunty.png') }}" alt='Warranty Banner' class='w-full h-auto rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 animate-fadeIn'>
+<div class="py-10 px-4 md:px-6 max-w-7xl mx-auto overflow-hidden">
+    <img src="{{ asset('best-seller-assets/Warrunty.png') }}"
+         alt="Warranty Banner"
+         class="w-full h-auto rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 animate-fadeIn">
 </div>
+
 
 <style>
     @keyframes fadeIn {
