@@ -6,33 +6,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
     <!-- Discount Banner -->
-   <div id="discount-banner"
-     class="relative top-0 w-full left-0 right-0 py-3 text-center z-10 bg-black">
-
-    {{-- <div class="flex items-center justify-center px-4">
-        <a href="/discount-offer"
-           class="flex items-center gap-2 text-white font-bold text-sm md:text-base whitespace-nowrap">
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                 stroke-width="1.5" stroke="currentColor" class="size-5">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                      d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
-            </svg>
-
-            <span class="text-amber-400  font-['Playfair_Display']">
-                Apply Now for 50% Discount
-            </span>
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                 stroke-width="1.5" stroke="currentColor" class="size-5">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                      d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
-                        <div class="flex gap-3 xs:gap-4 sm:gap-5 md:gap-6 lg:gap-8 overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-3 md:overflow-visible md:snap-none">
-
-        </a>
-    </div> --}}
-</div>
-
+   
 
     <!-- Navbar Spacer (discount banner height only) -->
    
@@ -94,7 +68,7 @@
     </div>
             
             <!-- RIGHT: Featured Product Visual -->
-            <div class="hidden md:flex w-1/2 items-center justify-end pr-8">
+          <div class="hidden md:flex w-1/2 items-center justify-end pr-8">
                 <div class="relative w-64 h-64 flex items-center justify-center">
                     <!-- Decorative Circle Background -->
                     <div class="absolute w-80 h-80 rounded-full bg-gradient-to-br from-amber-500/10 to-amber-900/10 blur-3xl"></div>
@@ -125,7 +99,6 @@
     <!-- Hero Section Logos/Badges (below landing section) -->
     @include('UserView.Home.Herosection.Herosection')
     @include('UserView.Home.Cards.CollapsibleTabs')
-    {{-- @include('UserView.Home.Cards.Exclusive-offer') --}}
     @include('UserView.Home.Cards.Best-seller')
     @include('UserView.Home.Cards.New-launch')
     <!-- Take Your Order Section (Contact capture) -->
@@ -172,68 +145,97 @@
         </div>
 
         <!-- Reviews Carousel -->
-        <div class="overflow-x-auto no-scrollbar scroll-smooth">
-            <div id="reviewsContainer" class="flex gap-6 w-max">
-                <!-- Reviews loaded from database via JavaScript -->
+       <div class="overflow-x-auto no-scrollbar scroll-smooth">
+    <div id="reviewsContainer" class="flex gap-6 w-max px-1">
+
+        <!-- Default Reviews -->
+        <div id="defaultReviews" class="flex gap-6">
+
+            <!-- Review Card 1 -->
+            <div class="min-w-[85%] sm:min-w-[45%] md:min-w-[32%] bg-gray-800/60 border border-gray-700 rounded-xl p-5 flex-shrink-0
+                        hover:border-amber-400/50 hover:scale-[1.03] transition-all duration-300 hover:bg-gray-800/80">
                 
-                <!-- Fallback: Default Review Cards (shown if no reviews in DB) -->
-                <div id="defaultReviews">
-                    <!-- Review Card 1 -->
-                    <div class="min-w-[90%] sm:min-w-[45%] md:min-w-[32%] bg-gray-800/60 border border-gray-700 rounded-xl p-6 hover:border-amber-400/50 hover:scale-105 transition-all duration-300 hover:bg-gray-800/80 flex-shrink-0">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-12 h-12 rounded-full overflow-hidden">
-                                <img src="https://via.placeholder.com/48" alt="Ahmed Raza" class="w-full h-full object-cover">
-                            </div>
-                            <div>
-                                <h4 class="text-white font-semibold">Ahmed Raza</h4>
-                                <p class="text-gray-400 text-xs">Verified Buyer ✓</p>
-                            </div>
-                        </div>
-                        <div class="flex text-amber-400 gap-0.5 mb-3">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                        </div>
-                        <p class="text-gray-100 text-sm mb-3 leading-relaxed">"Amazing quality! The watch arrived perfectly on time and looks even better than the pictures. Highly recommended!"</p>
-                        <p class="text-gray-400 text-xs">Purchased: Premium Watch Model A • 2 weeks ago</p>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-9 h-9 rounded-full overflow-hidden ring-1 ring-gray-600">
+                        <img src="https://via.placeholder.com/48" alt="Ahmed Raza" class="w-full h-full object-cover">
                     </div>
-
-                    <!-- Review Card 2 -->
-                    <div class="min-w-[90%] sm:min-w-[45%] md:min-w-[32%] bg-gray-800/60 border border-gray-700 rounded-xl p-6 hover:border-blue-400/50 hover:scale-105 transition-all duration-300 hover:bg-gray-800/80 flex-shrink-0">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-12 h-12 rounded-full overflow-hidden">
-                                <img src="https://via.placeholder.com/48" alt="Fatima Hassan" class="w-full h-full object-cover">
-                            </div>
-                            <div>
-                                <h4 class="text-white font-semibold">Fatima Hassan</h4>
-                                <p class="text-gray-400 text-xs">Verified Buyer ✓</p>
-                            </div>
-                        </div>
-                        <div class="flex text-amber-400 gap-0.5 mb-3">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                        </div>
-                        <p class="text-gray-100 text-sm mb-3 leading-relaxed">"Best headphones ever! The noise cancellation is incredible and the sound quality is crystal clear. Worth every penny!"</p>
-                        <p class="text-gray-400 text-xs">Purchased: Premium Headphones • 1 month ago</p>
-                    </div>
-
-                    <!-- Review Card 3 -->
-                    <div class="min-w-[90%] sm:min-w-[45%] md:min-w-[32%] bg-gray-800/60 border border-gray-700 rounded-xl p-6 hover:border-purple-400/50 hover:scale-105 transition-all duration-300 hover:bg-gray-800/80 flex-shrink-0">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-12 h-12 rounded-full overflow-hidden">
-                                <img src="https://via.placeholder.com/48" alt="Muhammad Khan" class="w-full h-full object-cover">
-                            </div>
-                            <div>
-                                <h4 class="text-white font-semibold">Muhammad Khan</h4>
-                                <p class="text-gray-400 text-xs">Verified Buyer ✓</p>
-                            </div>
-                        </div>
-                        <div class="flex text-amber-400 gap-0.5 mb-3">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                        </div>
-                        <p class="text-gray-100 text-sm mb-3 leading-relaxed">"Airbuds are perfect for the gym! Battery lasts forever, they fit snug, and never fall out. Highly satisfied!"</p>
-                        <p class="text-gray-400 text-xs">Purchased: Airbud Pro • 3 weeks ago</p>
+                    <div>
+                        <h4 class="text-white text-sm font-semibold">Ahmed Raza</h4>
+                        <p class="text-gray-400 text-xs">Verified Buyer ✓</p>
                     </div>
                 </div>
+
+                <div class="flex text-amber-400 gap-0.5 mb-3 text-sm">
+                    ★★★★★
+                </div>
+
+                <p class="text-gray-100 text-sm mb-3 leading-relaxed">
+                    "Amazing quality! The watch arrived perfectly on time and looks even better than the pictures."
+                </p>
+
+                <p class="text-gray-400 text-xs">
+                    Purchased: Premium Watch Model A • 2 weeks ago
+                </p>
             </div>
+
+            <!-- Review Card 2 -->
+            <div class="min-w-[85%] sm:min-w-[45%] md:min-w-[32%] bg-gray-800/60 border border-gray-700 rounded-xl p-5 flex-shrink-0
+                        hover:border-blue-400/50 hover:scale-[1.03] transition-all duration-300 hover:bg-gray-800/80">
+                
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-9 h-9 rounded-full overflow-hidden ring-1 ring-gray-600">
+                        <img src="https://via.placeholder.com/48" alt="Fatima Hassan" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h4 class="text-white text-sm font-semibold">Fatima Hassan</h4>
+                        <p class="text-gray-400 text-xs">Verified Buyer ✓</p>
+                    </div>
+                </div>
+
+                <div class="flex text-amber-400 gap-0.5 mb-3 text-sm">
+                    ★★★★★
+                </div>
+
+                <p class="text-gray-100 text-sm mb-3 leading-relaxed">
+                    "Best headphones ever! Noise cancellation is insane and sound quality is crystal clear."
+                </p>
+
+                <p class="text-gray-400 text-xs">
+                    Purchased: Premium Headphones • 1 month ago
+                </p>
+            </div>
+
+            <!-- Review Card 3 -->
+            <div class="min-w-[85%] sm:min-w-[45%] md:min-w-[32%] bg-gray-800/60 border border-gray-700 rounded-xl p-5 flex-shrink-0
+                        hover:border-purple-400/50 hover:scale-[1.03] transition-all duration-300 hover:bg-gray-800/80">
+                
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-9 h-9 rounded-full overflow-hidden ring-1 ring-gray-600">
+                        <img src="https://via.placeholder.com/48" alt="Muhammad Khan" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h4 class="text-white text-sm font-semibold">Muhammad Khan</h4>
+                        <p class="text-gray-400 text-xs">Verified Buyer ✓</p>
+                    </div>
+                </div>
+
+                <div class="flex text-amber-400 gap-0.5 mb-3 text-sm">
+                    ★★★★★
+                </div>
+
+                <p class="text-gray-100 text-sm mb-3 leading-relaxed">
+                    "Airbuds are perfect for gym use. Battery life is excellent and fitting is solid."
+                </p>
+
+                <p class="text-gray-400 text-xs">
+                    Purchased: Airbud Pro • 3 weeks ago
+                </p>
+            </div>
+
         </div>
+    </div>
+</div>
+
  <div class="text-center mt-10">
     <button onclick="openReviewModal()"
         class="px-8 py-3 rounded-xl bg-amber-400 text-black font-bold
@@ -419,7 +421,7 @@
                         const productInfo = review.product_name ? `Purchased: ${review.product_name}` : 'Verified Buyer ✓';
 
                         const reviewCard = `
-                            <div class="min-w-[90%] sm:min-w-[45%] md:min-w-[32%] bg-gray-800/60 border border-gray-700 rounded-xl p-6 hover:border-amber-400/50 hover:scale-105 transition-all duration-300 hover:bg-gray-800/80 flex-shrink-0">
+                            <div class="min-w-[50%] sm:min-w-[30%] md:min-w-[10%] bg-gray-800/60 border border-gray-700 rounded-xl p-6 hover:border-amber-400/50 hover:scale-105 transition-all duration-300 hover:bg-gray-800/80 flex-shrink-0">
                                 <div class="w-full h-[150px] rounded-lg overflow-hidden mb-4">
                                     <img src="${image}" alt="${review.name}" class="w-full h-full object-cover">
                                 </div>
